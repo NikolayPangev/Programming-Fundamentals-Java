@@ -1,4 +1,4 @@
-package TextProcessing;
+package TextProcessing_Exercise;
 
 import java.math.BigInteger;
 import java.util.Scanner;
