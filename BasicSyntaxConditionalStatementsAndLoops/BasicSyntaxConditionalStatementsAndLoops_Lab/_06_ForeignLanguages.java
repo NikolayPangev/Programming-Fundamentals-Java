@@ -1,16 +1,15 @@
-package BasicSyntax_ConditionalStatementsAndLoops_Lab;
+package BasicSyntaxConditionalStatementsAndLoops_Lab;
 
 import java.util.Scanner;
 
-public class P06_ForeignLanguages {
+public class _06_ForeignLanguages {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        String language = scanner.nextLine();
 
-        String county = scanner.nextLine();
-
-        switch (county) {
-            case "USA":
+        switch (language){
             case "England":
+            case "USA":
                 System.out.println("English");
                 break;
             case "Spain":
@@ -20,6 +19,7 @@ public class P06_ForeignLanguages {
                 break;
             default:
                 System.out.println("unknown");
+                break;
         }
     }
 }
