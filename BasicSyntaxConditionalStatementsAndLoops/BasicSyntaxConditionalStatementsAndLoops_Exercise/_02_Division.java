@@ -1,14 +1,13 @@
-package BasicSyntax_ConditionalStatementsAndLoops_Exercise;
+package BasicSyntaxConditionalStatementsAndLoops_Exercise;
 
 import java.util.Scanner;
 
-public class P02_Division {
+public class _02_Division {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+        int number = Integer.parseInt(sc.nextLine());
 
-        int number = Integer.parseInt(scanner.nextLine());
-
-        if(number % 10 == 0){
+        if (number % 10 == 0) {
             System.out.println("The number is divisible by 10");
         } else if (number % 7 == 0) {
             System.out.println("The number is divisible by 7");
