@@ -1,8 +1,8 @@
-package BasicSyntax_ConditionalStatementsAndLoops_Exercise;
+package BasicSyntaxConditionalStatementsAndLoops_Exercise;
 
 import java.util.Scanner;
 
-public class P05_Login {
+public class _05_Login {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String username = scanner.nextLine();
@@ -10,8 +10,8 @@ public class P05_Login {
         String password = "";
         int countWrongLogins = 0;
 
-        for (int possition = username.length() - 1; possition >= 0; possition--) {
-            char currentSymbol = username.charAt(possition);
+        for (int position = username.length() - 1; position >= 0; position--) {
+            char currentSymbol = username.charAt(position);
             password += currentSymbol;
         }
 
@@ -24,8 +24,7 @@ public class P05_Login {
             countWrongLogins++;
             inputPassword = scanner.nextLine();
         }
-
-        if(inputPassword.equals(password)){
+        if (inputPassword.equals(password)) {
             System.out.printf("User %s logged in.", username);
         }
     }
